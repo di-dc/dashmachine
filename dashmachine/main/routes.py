@@ -40,17 +40,18 @@ def response_minify(response):
 @main.before_app_request
 def check_valid_login():
 
-    if any(
-        [
-            request.endpoint.startswith("static"),
-            current_user.is_authenticated,
-            getattr(app.view_functions[request.endpoint], "is_public", False),
-        ]
-    ):
-        return
+    if request.endpoint:
+        if any(
+            [
+                request.endpoint.startswith("static"),
+                current_user.is_authenticated,
+                getattr(app.view_functions[request.endpoint], "is_public", False),
+            ]
+        ):
+            return
 
-    else:
-        return redirect(url_for("user_system.login"))
+        else:
+            return redirect(url_for("user_system.login"))
 
 
 # ------------------------------------------------------------------------------
