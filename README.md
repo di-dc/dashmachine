@@ -81,6 +81,9 @@ https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/cr
 ## Subreddit 
 https://www.reddit.com/r/DashMachine
 
+## Want to buy me a coffee?
+<a href="https://liberapay.com/rmountjoy/donate"><img alt="Donate using Liberapay" src="https://liberapay.com/assets/widgets/donate.svg"></a>
+
 ## Tech used
 * Flask
 * SQLalchemy w/ SQLite
@@ -90,5 +93,5 @@ https://www.reddit.com/r/DashMachine
 * Requests (python)
 
 ## FAQs
-1. <application> does not work in iframe
+1. application does not work in iframe
 see https://github.com/rmountjoy92/DashMachine/issues/6
